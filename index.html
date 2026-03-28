@@ -1,46 +1,79 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Netflix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main>
+    <main class="conteudo-principal">
         <h1>Quem está assistindo?</h1>
-        <section aria-label="Perfis disponíveis">
-            <nav class="profiles">
-                <a href="#" class="profile">
-                    <figure>
-                        <img src="/assets/fotoPerfil1.jpg"
-                            alt="Um personagem de aparência gótica e caricata, com cabelos roxos e monóculo, posa em um cenário fantástico de miniaturas sombrias iluminadas por velas.">
-                        <figcaption>Isabella</figcaption>
+        <ul class="lista-perfis">
+            <li class="item-perfil">
+                <a href="catalogo/catalogo.html" class="perfil">
+                    <figure class="avatar-container">
+                        <span class="imagem-perfil tema-cris" aria-hidden="true">
+                            <span class="icone-avatar">
+                                <img src="assets/fotoPerfil1.jpg" alt="Perfil de Isabella" width="128" height="128">
+                            </span>
+                        </span>
+                        <figcaption class="nome-perfil">Isabella</figcaption>
                     </figure>
                 </a>
-                <a href="#" class="profile">
-                    <figure>
-                        <img src="/assets/fotoPerfil2.jpg" alt="Imagem de um boné azul">
-                        <figcaption>Thiago</figcaption>
+            </li>
+
+            <li class="item-perfil">
+                <a href="catalogo/catalogo.html" class="perfil">
+                    <figure class="avatar-container">
+                        <span class="imagem-perfil tema-cris" aria-hidden="true">
+                            <span class="icone-avatar">
+                                <img src="assets/fotoPerfil2.jpg" alt="Perfil de Guilherme" width="128" height="128">
+                            </span>
+                        </span>
+                        <figcaption class="nome-perfil">Guilherme</figcaption>
                     </figure>
                 </a>
-                 <a href="#" class="profile">
-                    <figure>
-                        <img src="/assets/fotoPerfil3.jpg" alt="Imagem de um boné azul">
-                        <figcaption>Lucas</figcaption>
+            </li>
+
+            <li class="item-perfil">
+                <a href="catalogo/catalogo.html" class="perfil">
+                    <figure class="avatar-container">
+                        <span class="imagem-perfil tema-cris" aria-hidden="true">
+                            <span class="icone-avatar">
+                                <img src="assets/fotoPerfil3.jpg" alt="Perfil de Thamiris" width="128" height="128">
+                            </span>
+                        </span>
+                        <figcaption class="nome-perfil">Thamiris</figcaption>
                     </figure>
                 </a>
-                 <a href="#" class="profile">
-                    <figure>
-                        <img src="/assets/fotoPerfil4.jpg" alt="Imagem de um boné azul">
-                        <figcaption>Maria</figcaption>
+            </li>
+
+            <li class="item-perfil">
+                <a href="/catalogo/catalogo.html" class="perfil">
+                    <figure class="avatar-container">
+                        <span class="imagem-perfil tema-cris" aria-hidden="true">
+                            <span class="icone-avatar">
+                                <img src="assets/fotoPerfil4.jpg" alt="Perfil de Lopretis" width="128" height="128  ">
+                            </span>
+                        </span>
+                        <figcaption class="nome-perfil">Lopretis</figcaption>
                     </figure>
                 </a>
-            </nav>
+            </li> 
+        </ul>
+
+
+        <section class="gerenciar">
+            <button type="button" class="botao-gerenciar">Gerenciar perfis</button>
         </section>
+
     </main>
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>
